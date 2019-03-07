@@ -1,0 +1,36 @@
+//
+//  PrefixHeader.pch
+//  ku耳
+//
+//  Created by mac on 2018/11/5.
+//  Copyright © 2018 WO. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+// 全局的宏定义
+#define WIDTH [UIScreen mainScreen].bounds.size.width
+
+#define HEIGHT ([UIScreen mainScreen].bounds.size.height - 64)
+
+#define RGB(r,g,b,a) [UIColor colorWithRed:r/255.0 green:g/255.0 blue:b/255.0 alpha:a]
+
+//头文件
+#import "VdViewController.h"//在线播放视频页   1
+#import "DownLoadViewController.h"//下载页控制器  2
+
+//第三方
+
+#import "YJProgressHUD.h" //提示栏
+#import "QSPDownloadTool.h"  //离线缓存工具
+#import "MJRefresh.h"//刷新
+#import "AFNetworking.h"//网络请求
+#import "UIKit+AFNetworking.h"
+#import "SVProgressHUD.h"//加载栏
+#import "SCNavTabBarController.h"
+#import <UIImageView+WebCache.h>/*图片异步加载*/
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#endif /* PrefixHeader_pch */
